@@ -7,6 +7,7 @@
     --btnFontColor: #FFFFFF;
     --todoColor: #D9D9D9;
     --cancelBgColor: #b6b6b6;
+    --cancelHover: #a9a9a9;
     --circleColor: #ffffff5b;
 }
 
@@ -170,8 +171,22 @@ section {
 }
 
 .cancel:hover {
-    background: var(--circleColor);
+    background: var(--cancelHover);
     transition: 0.25s;
+}
+
+.lge {
+    animation-name: enlarge;
+    animation-duration: 0.25s;
+}
+
+@keyframes enlarge {
+    0% {
+
+    } 100% {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (width >= 1200px) {
