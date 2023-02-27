@@ -18,10 +18,6 @@ const createTodo = (text) => {
     xImage.style.width = '40px';
     xImage.style.height = '40px';
 
-    xImage.addEventListener('mouseover', () => {
-        
-    })
-
     cancelSlot.addEventListener('click', () => {
         deleteTodo(slot);
     })
