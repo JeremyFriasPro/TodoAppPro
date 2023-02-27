@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App Pro | Version 1.0</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="circle" id="c1"></div>
+    <div class="circle" id="c2"></div>
+    <div class="circle" id="c3"></div>
+
+    <div class="wrapper">
+        <section class="part" id="nav">
+             <h1>Todo App Pro</h1>
+             <div class="line"></div>
+             <h3>Version 1.0</h3>
+        </section>
+        <section class="part" id="create">
+            <form method="GET" id="todo-form">
+                <label for="todo-text">Write your todo here...</label>
+                <input type="text" name="todo-text" id="todo" class="boxy">
+                <button submit id="create-btn" class="boxy">Create</button>
+            </form>
+        </section>
+        <section class="part" id="view">
+            <label>Your Todo's</label>
+            <div id="view-box" class="boxy">
+                <div class="controls">
+                    <h3>Current Controls</h3>
+                    <div class="dot"></div>
+                    <button id="delete" class="boxy">Delete all todos.</button>
+                </div>
+                <div class="user-todos"></div>
+            </div>
+        </section>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

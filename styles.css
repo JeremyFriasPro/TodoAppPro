@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap');
+
+:root {
+    --mainFont: 'Manrope', sans-serif;
+    --fontColor: #000000;
+    --bgColor: #CCCCCC;
+    --btnFontColor: #FFFFFF;
+    --todoColor: #D9D9D9;
+    --cancelBgColor: #b6b6b6;
+    --circleColor: #ffffff5b;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+}
+
+label {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+button {
+    color: var(--btnFontColor);
+    background: var(--fontColor);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--fontColor);
+    background: var(--todoColor);
+    transition: 0.25s;
+}
+
+body {
+    color: var(--fontColor);
+    background: var(--bgColor);
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--circleColor);
+    z-index: -999;
+}
+
+#c1 {
+    width: 600px;
+    height: 600px;
+    transform: translateY(-12em) translateX(-7.15em);
+}
+
+#c2 {
+    width: 350px;
+    height: 350px;
+    transform: translateY(-7em) translateX(35em);
+}
+
+#c3 {
+    width: 200px;
+    height: 200px;
+    transform: translateY(15em) translateX(60em);
+}
+
+.wrapper {
+    padding-top: 2.5em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+section {
+    padding: 2em 0em;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav h1 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+#nav h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.line {
+    height: 3em;
+    width: 1px;
+    background: var(--fontColor);
+    margin: 0em 1em;
+}
+
+#create label {
+    display: block;
+}
+
+.boxy {
+    border: 1px solid var(--fontColor);
+}
+
+#todo {
+    font-size: 1.8em;
+    height: 2em;
+    width: 20em;
+    padding-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+#create button {
+    font-size: 1.8em;
+    height: 2em;
+    width: 7em;
+    margin-left: 0.12em;
+}
+
+#view-box {
+    margin-top: 0.5em;
+    padding: 2em;
+    background: var(--btnFontColor);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--fontColor);
+    margin: 0em 1em;
+}
+
+#delete {
+    font-size: 1.25em;
+    font-weight: 300;
+    padding: 0.25em 1em;
+}
+
+.items {
+    position: relative;
+    font-weight: 300;
+    font-size: 1.5em;
+    background: var(--bgColor);
+    padding: 1em;
+    margin: 1em 0em;
+    display: inherit;
+}
+
+.cancel {
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    width: 10%;
+    height: 100%;
+    background: var(--cancelBgColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel:hover {
+    background: var(--circleColor);
+    transition: 0.25s;
+}
+
+@media (width >= 1200px) {
+    #view-box {
+        width: 80%;
+    }
+}
